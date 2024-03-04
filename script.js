@@ -15,3 +15,21 @@ document.querySelector('#search-icon').onclick=() =>{
 document.querySelector('#close').onclick=() =>{
     document.querySelector('#search-form').classList.remove('active');
 }
+
+
+function toggleDarkMode() {
+           
+    const body = document.body;
+    
+    // Check if body has dark mode background color
+    if (body.style.backgroundColor === 'rgb(51, 51, 51)' || body.style.backgroundColor === '#333') {
+        // If it does, remove it and set default background color
+        body.style.backgroundColor = ''; // Reset background color
+        body.style.color="black"
+        
+    } else {
+        // If it doesn't, set dark mode background color
+        body.style.backgroundColor = '#333'; // Set dark mode background color
+        body.style.color="white"
+    }
+}
