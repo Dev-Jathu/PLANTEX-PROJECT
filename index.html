@@ -17,22 +17,29 @@
 
 <body>
     <!-- header section start -->
-    <header>
+    <header id="header">
         <a href="#" class="logo"><img src="assets/favicon.png"></a>
         <h1>PLANTEX</h1>
-        <nav class="navbar">
-            <a href="#homepage" >Home</a>
+        <nav class="navbar" id="cpbar">
+
+            <a href="#" onclick="toggleDarkMode()" class="bg"> <i class="fa-regular fa-moon" id="res"> </i> </a>
+            <a href="#homepage">Home</a>
             <a href="#about">About</a>
             <a href="#product">Products</a>
             <a href="#FAQs">FAQs</a>
             <a href="#contactus">Contact Us</a>
+
         </nav>
+
         <nav class="navbarcopy">
-            <a href="#homepage" >Home</a>
-            <a href="#about" >About</a>
-            <a href="#product">Products</a>
-            <a href="#FAQs">FAQs</a>
-            <a href="#contactus">Contact Us</a>
+            <a href="#homepage" id="nav">Home</a>
+            <a href="#about" id="nav1">About</a>
+            <a href="#product" id="nav2">Products</a>
+            <a href="#FAQs" id="nav3">FAQs</a>
+            <a href="#contactus" id="nav4">Contact Us</a>
+            <a href="#" onclick="toggleDarkMode()" id="nav5"> <i class="fa-regular fa-moon" id="moonres"></i> </a>
+
+
         </nav>
         <div class="icons">
             <i class="fas fa-bars" id="menu-bars"></i>
@@ -85,12 +92,12 @@
             <h1>OUR PRODUCTS</h1>
         </div>
         <div class="button">
-            <button>Featured</button>
-            <button>Bestseller</button>
-            <button>Latest</button>
+            <button onclick="Featured()" id="b1">Featured</button>
+            <button onclick="Bestseller()" id="b1">Bestseller</button>
+            <button onclick="Latest()" id="b1">Latest</button>
         </div>
         <div class="gridproduct">
-            <div class="ourproducts">
+            <div class="ourproducts" id="our">
                 <img src="assets/product1.png">
                 <p id="subhead">
                 <h3>American Marigold</h3>
@@ -102,7 +109,7 @@
                 <i class="fa-solid fa-star"></i>
                 </p>
             </div>
-            <div class="ourproducts">
+            <div class="ourproducts" id="our1">
                 <img src="assets/product2.png">
                 <p id="subhead">
                 <h3>Black Eyed Susan</h3>
@@ -114,7 +121,7 @@
                 <i class="fa-solid fa-star"></i>
                 </p>
             </div>
-            <div class="ourproducts">
+            <div class="ourproducts" id="our2">
                 <img src="assets/product3.png">
                 <p id="subhead">
                 <h3>Bleeding Heart</h3>
@@ -126,7 +133,7 @@
                 <i class="fa-solid fa-star"></i>
                 </p>
             </div>
-            <div class="ourproducts">
+            <div class="ourproducts" id="our3">
                 <img src="assets/product4.png">
                 <p id="subhead">
                 <h3>Bloody Ctanesbill</h3>
@@ -138,7 +145,7 @@
                 <i class="fa-solid fa-star"></i>
                 </p>
             </div>
-            <div class="ourproducts">
+            <div class="ourproducts" id="our4">
                 <img src="assets/product5.png">
                 <p id="subhead">
                 <h3>Butterfly Weed</h3>
@@ -150,7 +157,7 @@
                 <i class="fa-solid fa-star"></i>
                 </p>
             </div>
-            <div class="ourproducts">
+            <div class="ourproducts" id="our5">
                 <img src="assets/product6.png">
                 <p id="subhead">
                 <h3>Common Yarrow</h3>
@@ -162,7 +169,7 @@
                 <i class="fa-solid fa-star"></i>
                 </p>
             </div>
-            <div class="ourproducts">
+            <div class="ourproducts" id="our6">
                 <img src="assets/product1.png">
                 <p id="subhead">
                 <h3>Doublefile Viburnum</h3>
@@ -174,8 +181,34 @@
                 <i class="fa-solid fa-star"></i>
                 </p>
             </div>
-            <div class="ourproducts">
+            <div class="ourproducts" id="our7">
                 <img src="assets/product2.png">
+                <p id="subhead">
+                <h3>Feather Reed Grass</h3>
+                <h4>$20.00</h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                </p>
+            </div>
+
+            <div class="ourproducts" id="our8">
+                <img src="assets/8-removebg-preview.png">
+                <p id="subhead">
+                <h3>Feather Reed Grass</h3>
+                <h4>$20.00</h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                </p>
+            </div>
+
+            <div class="ourproducts" id="our9">
+                <img src="assets/9-removebg-preview.png">
                 <p id="subhead">
                 <h3>Feather Reed Grass</h3>
                 <h4>$20.00</h4>
@@ -192,7 +225,7 @@
     <!-- FAQs start -->
     <div class="FAQs" id="FAQs">
         <div class="content">
-            <h1>Some Common questions <br> were often asked</h1>
+            <h1 id="some">Some Common questions <br> were often asked</h1>
             <div class="qustion">
                 <div class="question1">
                     <p id="q1">+ My flowers are falling off or dying?</p>
@@ -214,27 +247,27 @@
                 </div>
             </div>
         </div>
-        <div class="teamsection">
+        <div class="teamsection" id="team">
             <div class="parateam">
                 <h2>WHAT SAY CLIENT</h2>
                 <p class="teampara">Hi This is our company reviews.contary to popular belief </p>
             </div>
             <div class="gridteam">
-                <div class="clientreview">
+                <div class="clientreview" id="client">
                     <img src="assets/product1.png">
                     <h3>JATHUSHA</h3>
                     <h4>client</h4>
                     <p class="reviewpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, repellat
                         voluptate nostrum adipisci cupiditate autem.</p>
                 </div>
-                <div class="clientreview">
+                <div class="clientreview" id="client1">
                     <img src="assets/product3.png">
                     <h3>JATHUSHA</h3>
                     <h4>client</h4>
                     <p class="reviewpara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad magnam accusamus
                         ab porro deserunt tempore sint.</p>
                 </div>
-                <div class="clientreview">
+                <div class="clientreview" id="client2">
                     <img src="assets/product2.png">
                     <h3>JATHUSHA</h3>
                     <h4>client</h4>
@@ -248,7 +281,7 @@
     <!-- contact form start -->
     <div class="contactform" id="contactus">
         <div class="contactinfo">
-            <div class="color">
+            <div class="color" id="color">
                 <h2>Contact Info</h2>
                 <p>Fill The form and our team will Get to back ,<br>
                     To you within 24 Hours.</p>
@@ -258,15 +291,19 @@
                     <i class="fa-solid fa-location-dot"><a href="">49,Chettikulam,Vavuniya</a></i>
                 </div>
             </div>
-            <div class="userdetails">
+            <div class="userdetails" id="color1">
                 <form action="https://api.web3forms.com/submit" method="POST">
 
                     <input type="hidden" name="access_key" value="07f52770-1fcf-4235-95fc-cba927b71c4c">
-                    <input type="text" id="firstname" class="box" minlength="15" placeholder="Firstname" name="Firstname" required>
-                    <input type="text" id="Lasstname" class="box" minlength="15" placeholder="Lastname"  name="Lasstname" required><br>
-                    <input type="number" id="number" class="box" minlength="10" placeholder="Phone Number" name="phone number" required>
+                    <input type="text" id="firstname" class="box" minlength="15" placeholder="Firstname"
+                        name="Firstname" required>
+                    <input type="text" id="Lasstname" class="box" minlength="15" placeholder="Lastname" name="Lasstname"
+                        required><br>
+                    <input type="number" id="number" class="box" minlength="10" placeholder="Phone Number"
+                        name="phone number" required>
                     <input type="email" id="email" class="box" placeholder="Email" required name="E-mail"><br>
-                    <input type="textaria" id="textbox" minlength="20" placeholder="Message" class="textbox" name="text"><br>
+                    <input type="textaria" id="textbox" minlength="20" placeholder="Message" class="textbox"
+                        name="text"><br>
                     <a href="#"><button class="postcomment">Talk With Me</button></a>
                 </form>
             </div>
@@ -280,7 +317,7 @@
     </div>
     <!-- contact page end -->
     <!-- footer start -->
-    <div class="footer">
+    <div class="footer" id="footer">
         <div class="gridfooter">
             <div class="plantext">
                 <div class="gridlogo">
@@ -292,9 +329,6 @@
                     <input type="email" placeholder="Enter Your E-mail Address" class="mail">
                     <button class="Subscribe">Subscribe</button>
                 </div>
-
-
-
             </div>
             <div class="ouraddress">
                 <p>Our Address</p>
