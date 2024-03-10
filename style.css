@@ -269,22 +269,7 @@ header .icons a {
         margin-left: -50px;
     }
 }
-@media(max-width:1618px){
-    header .navbarcopy a {
-        width: 100%;
-        text-align: center;
-        padding-left: 4px;
-        font-size: 2rem;
-        /* background-color: #ca1919; */
 
-    }
-    header .navbarcopy{
-        width: 100%;
-        margin-left: 700px;
-
-    }
-
-}
 /* homepage started */
 .homepage {
     display: flex;
@@ -497,6 +482,7 @@ label {
         gap: 300px;
         height: 110vh;
         /* background-color: #192a56; */
+        margin-left: 290px;
     }
 
     .aboutimage img {
@@ -554,15 +540,7 @@ label {
         transition: 1.7s;
     }
 }
-@media(max-width:1618px){
-    .Headin-about{
-        margin-left: -130px;
-    }
-    .aboutimage img{
-        margin-left: -40px;
-    }
-    
-}
+
 
 
 /* product page started */
@@ -825,11 +803,7 @@ h4 {
 
     }
 }
-@media(max-width:1618px){
-    .FAQs{
-        margin-top: 50px;
-    }
-}
+
 
 .teamsection {
     height: 300px;
@@ -1140,44 +1114,7 @@ h4 {
         margin-left: 32px;
     }
 }
-@media(max-width:1618px){
-    .map {
-       margin-left: 80px;
-    }
-    .contactform {
-        margin-top: 100px;
-        width: 70%;
-        margin-left: 170px;
-    }
-      .userdetails {
-        /* width: 380px; */
-        margin-left: 50px;
-        height: 600px;
-        box-shadow: none;
-        box-shadow: 1px 1px 5px whitesmoke;
 
-
-    }  
-    .color{
-        width: 500px;
-        height: 600px;
-        box-shadow: 1px 1px 5px whitesmoke;
-        margin-left: 150px;
-
-    }
-    .postcomment {
-        width: 150px;
-        height: 50px;
-        margin-top: 25px;
-        margin-left:0px;
-        background-color: #27ae60;
-        font-size: 16px;
-        text-align: center;
-        border-radius: 10px;
-    }
-    
-
-}
  /* footer :start */
 .footer{
     height: 40vh;
