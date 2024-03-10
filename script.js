@@ -188,3 +188,7 @@ function Latest() {
     our8.style.display="block"
     our9.style.display="block"
 }
+function flower(){
+    const q1=document.getElementById("samplepara")
+    q1.style.display="block"
+}
