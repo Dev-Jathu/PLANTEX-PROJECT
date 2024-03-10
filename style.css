@@ -380,48 +380,6 @@ header .icons a {
 
     }
 }
-@media(min-width:700px){
-   
-    .heading h2 {
-        font-size: 45px;
-        letter-spacing: 3px;
-        line-height: 60px;
-        text-align: justify;
-        margin-left: 120px;
-        margin-top: 250px;
-
-    }
-
-    #para1 {
-        font-size: 33px;
-        margin-left: -300px;
-        letter-spacing: 1px;
-        line-height: 40px;
-        margin-left: 120px;
-        margin-top: 50px;
-
-    }
-
-    .image img {
-        width: 450px;
-    }
-
-    
-    #explore {
-        margin-left: 125px;
-        font-size: 18px;
-        width: 150px;
-        height: 40px;
-
-    }
-    .homepage {
-        
-        margin-left: 20px;
-        /* background-color: rgb(255, 255, 0); */
-    }
-
-}
-
 
 /* started about page */
 .about {
